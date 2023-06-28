@@ -1,0 +1,462 @@
+:root {
+    --color-white: 255, 255, 255;
+    --color-black: 0, 0, 0;
+    --color-red: 255, 0, 0;
+    --color-grey: 106, 106, 106;
+    --color-darkblue: 40, 39, 44;
+    --color-grey178: 178, 178, 178;
+    --color-grey209: 209, 209, 209;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+.container{
+    margin: auto;
+    width: 1088px;
+}
+
+/*Navigation*/
+header {
+    background-color: rgba(var(--color-black), 0.4);
+    border-bottom: 2px solid rgba(var(--color-white), 0.2);
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-family: Nunito Sans;
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: rgba(var(--color-white), 1);
+    padding-right: 100px;
+}
+
+.menu-logo p span {
+    color: rgba(var(--color-red), 1);
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+.navigation {
+    color: rgba(var(--color-white), 1);
+    font-family: Nunito Sans;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+.menu-list {
+    display: flex;
+    align-items: center;
+
+}
+
+.li-menu {
+    padding-bottom: 35px;
+    padding-top: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none
+
+}
+
+.li-menu:hover {
+    background-color: rgba(var(--color-white), 0.2);
+}
+
+/*Main part*/
+.main-layout {
+
+    background-image: url("../images/kevin-schmid-Mta8r0bxhbo-unsplash.jpg");
+    background-size: cover;
+    height: 97vh;
+    width: 100%;
+}
+
+
+.main-cover {
+    background-color: rgba(var(--color-black), 0.3);
+    width: 100%;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    color: rgba(var(--color-white), 1);
+    font-family: Nunito Sans;
+
+}
+
+.main-text h1 {
+    text-align: center;
+    padding-bottom: 70px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 90px;
+}
+
+.main-text p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.main-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+/*Buttons*/
+.btn {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background-color: rgba(var(--color-red), 1);
+    border-radius: 40px;
+    text-decoration: none;
+    color: rgba(var(--color-white), 1);
+    font-family: Nunito Sans;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+
+}
+
+.btn:hover {
+    box-shadow: 0px 3px 6px rgba(var(--color-black), 0.6);
+}
+
+.btn-big {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 55px;
+    padding-left: 55px;
+    font-size: 16px;
+}
+
+.btn-big-white {
+    color: rgba(var(--color-red), 1);
+    background-color: rgba(var(--color-white), 1);
+}
+
+.box-arrow {
+    display: flex;
+    justify-content: center;
+    transform: translate(0, -50%);
+    padding-right: 544px;
+    padding-left: 544px;
+
+
+
+}
+.arrow {
+    background-color: rgba(var(--color-red), 1);
+    border-radius: 50%;
+    padding: 17px;
+}
+
+/*blog*/
+.blog {
+    background-color: (--color-white);
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 95px;
+    padding-bottom: 40px;
+    font-family: "Nunito Sans";
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section-header span {
+    width: 50px;
+    height: 3px;
+    background-color: rgb(var(--color-red));
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.blog-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+
+
+}
+
+.blog-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.blog-box img {
+    width: 352px;
+    padding-bottom: 30px;
+}
+
+.blog-box h3 {
+    padding-bottom: 25px;
+    font-family: Nunito Sans;
+    font-size: 19px;
+    color: rgba(var(--color-grey), 1);
+}
+
+.blog-box p {
+    padding-bottom: 25px;
+    padding-right: 85px;
+    width: 352px;
+    font-family: Open Sans;
+    font-size: 14px;
+    color: rgba(var(--color-grey), 1);
+    line-height: 1.5em;
+    margin-bottom: auto;
+}
+
+/*service*/
+.service {
+    display: flex;
+    background-color: rgba(var(--color-darkblue), 1);
+    width: 100%;
+}
+
+.service-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.service-box img {
+    width: 170px;
+    padding-bottom: 15px;
+
+}
+
+.service-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.service-box h3 {
+    padding-bottom: 20px;
+    font-family: Nunito Sans;
+    font-size: 19px;
+    color: rgba(var(--color-grey), 1);
+}
+
+.service-box p {
+    padding-bottom: 25px;
+    font-family: Open Sans;
+    font-size: 14px;
+    color: rgba(var(--color-grey), 1);
+    line-height: 1.5em;
+    margin-bottom: auto;
+}
+
+.section-header-grey {
+    padding-top: 60px;
+    color: rgba(var(--color-white), 1);
+}
+
+/*contact*/
+.contact-boxes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact-boxes img {
+    width: 444px;
+    padding-bottom: 91px;
+    padding-right: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 444px;
+}
+
+input, textarea {
+    border: 1px solid rgba(var(--color-grey209), 1);
+    border-radius: 8px;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    color: rgba(var(--color-black), 1);
+    transition: 0.2s;
+    margin-bottom: 20px;
+}
+
+.text {
+    height: 38px;
+}
+
+textarea {
+    height: 140px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border-color: rgba(var(--color-red), 1);
+    box-shadow: 0 1px 6px rgba(var(--color-red), 0.3);
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(var(--color-grey178), 1);
+}
+
+label {
+    olor: rgb(var(--color-gray178), 1);
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: Open Sans;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    border: 1px solid rgba(var(--color-grey209), 1);
+    border-radius: 8px;
+    box-shadow: none;
+    position: relative;
+    flex: 1 0 auto;
+    height: 22px;
+    width: 22px;
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    background-image: url("../images/Icon Check.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.btn--contact {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.btn--white {
+    background-color: rgba(var(--color-primary), 1);
+    color: rgba(var(--color-red), 1);
+    border-color: rgba(var(--color-red), 1);
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(var(--color-darkblue), 1);
+    margin-top: 65px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main--container {
+    display: flex;
+    flex-direction: column;
+    color: rgba(var(--color-white), 1);
+    text-transform: uppercase;
+    font-family: Nunito Sans;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+.columns {
+    display: flex;
+    text-decoration: none;
+}
+
+.columns a {
+    text-decoration: none;
+    color: rgba(var(--color-white), 1);
+}
+
+.columns a:hover {
+    color: rgba(var(--color-red), 1);
+}
+
+.columns ul {
+    padding-right: 140px;
+}
+.columns li {
+    padding-bottom: 10px;
+}
+
+.footer-logo {
+    display: flex;
+    font-size: 25px;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.footer-logo span {
+    color: rgba(var(--color-red), 1);
+}
+
+.footer-logo h4 {
+    padding-left: 5px;
+}
+
+.copyright {
+    text-transform: none;
+    font-size: 12px;
+    font-weight: 300;
+}
